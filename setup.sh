@@ -58,8 +58,11 @@ mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
+# kubectl global erişim sağlamak için
+sudo ln -s /usr/bin/kubectl /usr/local/bin/kubectl
+
 # Kubernetes node'ları kontrol etme
 kubectl get nodes
 
 # Nginx pod'u başlatma
-kubectl run nginx --image=nginx
+kubectl create deployment nginx --image=nginx
