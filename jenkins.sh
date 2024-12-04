@@ -1,8 +1,6 @@
 #Java Kurulum
 sudo apt install fontconfig openjdk-17-jre
 
-
-
 # Jenkis Kurulum
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
