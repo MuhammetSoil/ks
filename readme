@@ -7,9 +7,11 @@
   "user_data": "#!/bin/bash
 git clone https://github.com/MuhammetSoil/ks.git
 cd ks
-chmod +x kube.sh
+chmod +x kubev2.sh
 chmod +x jenkins.sh
-yes | ./kube.sh
+chmod +x argocd.sh
+yes | ./kubev2.sh
+yes | ./argocd.sh
 yes | ./jenkins.sh"
 }
 
